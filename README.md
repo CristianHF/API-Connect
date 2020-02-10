@@ -1,2 +1,2 @@
-# API-Connect
-Formación en IBM API Connect
+# API Connect
+Registro en IBM Cloud: [IBM Cloud](http://www.ibm.com/cloud "IBM Cloud")
