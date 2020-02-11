@@ -106,6 +106,17 @@ Dentro de cada operación tenemos que añadir tanto los parámetros de entrada, 
 
 Para indicar qué seguridad se debe emplear, hay que desmarcar la casilla **Use API security definitions** y elegir la definida por nosotros y el scope correcto.
 
+### Policy Assembly
+
+También podemos acceder al ensamblado del API desde la pestaña **Assemble**.
+
+Aquí se puede configurar el comportamiento del API desde que llega la petición hasta que se manda a donde nosotros queramos.
+Por defecto nos aparece una política **invoke**, la sustituimos por una **proxy** del menú de la izquierda simplemente arrastrando.
+
+Si pulsamos sobre la política podemos configurarla. En el apartado URL pondremos lo siguiente: $(target-url)$(request.path)
+* $(target-url): hace referencia a la propiedad definida anteriormente
+* $(request.path): una variable de entorno que contiene el endpoint al que hemos llamado
+
 -----
 
 ### Productos
