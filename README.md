@@ -29,3 +29,12 @@ En este caso vamos a crear la API Accounts y cuando rellenemos todos los campos 
 
 -----
 
+### Definición del API
+
+La primera pestaña que se nos muestra es el editor gráfico, conforme vayamos rellenado campos y creando definiciones, se irá traduciendo a lenguaje swagger en la pestaña **Source**.
+
+En el menú de la izquierda tenemos acceso directo a los principales objetos que se pueden definir en swagger. Los más importantes son:
+* Info: solo faltaría por añadir la descripción del API
+* Base Path: viene relleno con lo que indicamos al crear el API
+* Security Definitions: por defecto, API Connect nos ha creado una API Key, podemos cambiarle el nombre en el campo **Name**. Aquí también es donde definiremos las políticas de seguridad.
+* * fdas
