@@ -73,3 +73,19 @@ Definimos la cabecera **Authorization** y la marcamos como obligatoria.
 
 Aquí se definen los objetos JSON de entrada y salida.
 
+Definimos los objetos necesarios para montar la siguiente estructura
+```json
+{
+  "accountsList": [
+    {
+      "accountId": "1234567890",
+      "alias": "MyAccount1",
+      "mainBalance": {
+        "amount": 10,
+        "currency": "EUR"
+      },
+      "lastUpdateDate": "01/20/2020"
+    }
+  ]
+}
+```
