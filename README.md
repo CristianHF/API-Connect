@@ -142,12 +142,15 @@ Una vez desplegado el producto en el catálogo, accedemos a él en el menú de l
 
 -----
 
-### API Portal
+### Credenciales, suscripción y prueba
 
-Ya tenemos el API publicada pero no podemos verla ni consumirla, se necesita un API Portal.
+Para poder probar el API, necesitamos unas credenciales, para ello necesitamos una aplicación, que esté suscrita al API y que pertenezca a una organización consumidora. Todo esto se puede crear/gestionar desde la pestaña **Community**.
 
-En la misma vista del catálogo, seleccionamos la pestaña **Settings** y en el menú de la izquierda nos vamos a la sección de **Portal**. En el menú desplegable elegimos la opción **IBM Developer Portal**. Guardamos el progreso.
+Aunque se haya creado una por defecto, vamos a crear otra distinta. El orden sería:
+* Crear una aplicación: se nos informarán un **client_id** y un **client_secret** que deberemos apuntar
+* Suscribir la aplicación a un plan de producto
 
-Inmediatamente aparecerá la URL del portal aunque nos avisará de que el proceso puede tardar hasta 2 horas hasta que sea accesible. También se nos advertirá mediante una ventana emergente que cuando el portal esté levantado nos llegará un correo de confirmación.
+Para saber la URL a la que debemos atacar la podemos encontrar en la pestaña **Settings** y en la sección **Gateways**.
 
-Para establecer el modo en el que los consumidores se registran y reciben invitación, en el apartado de **User Registry** seleccionamos la opción **Portal Delegated User Registry** para que el portal se encarge de gestionarlo.
+Una vez hecho esto podríamos usar **Postman** para probar el API.
+Haciendo un GET a la URL del Gateway y concatenándole **/accounts/** debería devolvernos un listado de cuentas. Concatenando **/accounts/{account_id}** debería devolvernos el detalle de una sola cuenta.
