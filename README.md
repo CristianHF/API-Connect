@@ -132,6 +132,8 @@ Lo más destacable de la configuración del producto es:
 
 Una vez configurado el producto, debemos desplegarlo en el **Catálogo**, pulsando en el botón de la nube de arriba a la derecha y seleccionando el único catálogo, que se crea por defecto al iniciar la instancia de API Connect.
 
+Otra alternativa para crear un producto. Cuando estamos definiendo el API, en el menú de los tres puntos de la derecha, nos aparece la opción **Generate a default product**, nos aparecerá la misma ventana emergente que rellenar e incluso tendremos la opción de desplegar en el catálogo y publicar en el API Portal. Si ya tuviésemos un producto definido, podemos selccionar la opción **Add to existing products** y elegir el que queramos de la lista de productos ya creados.
+
 -----
 
 ### Catálogo
