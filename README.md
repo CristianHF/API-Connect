@@ -139,3 +139,15 @@ Otra alternativa para crear un producto. Cuando estamos definiendo el API, en el
 ### Catálogo
 
 Una vez desplegado el producto en el catálogo, accedemos a él en el menú de la izquierda seleccionando la opción **Dashboard**, elegimos el catálogo y nos aparecerá el producto en estado **Stage**. Usando el menú de los tres puntos podemos publicar el producto seleccionando la opción **Publish**.
+
+-----
+
+### API Portal
+
+Ya tenemos el API publicada pero no podemos verla ni consumirla, se necesita un API Portal.
+
+En la misma vista del catálogo, seleccionamos la pestaña **Settings** y en el menú de la izquierda nos vamos a la sección de **Portal**. En el menú desplegable elegimos la opción **IBM Developer Portal**. Guardamos el progreso.
+
+Inmediatamente aparecerá la URL del portal aunque nos avisará de que el proceso puede tardar hasta 2 horas hasta que sea accesible. También se nos advertirá mediante una ventana emergente que cuando el portal esté levantado nos llegará un correo de confirmación.
+
+Para establecer el modo en el que los consumidores se registran y reciben invitación, en el apartado de **User Registry** seleccionamos la opción **Portal Delegated User Registry** para que el portal se encarge de gestionarlo.
