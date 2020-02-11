@@ -36,6 +36,7 @@ La primera pestaña que se nos muestra es el editor gráfico, conforme vayamos r
 En el menú de la izquierda tenemos acceso directo a los principales objetos que se pueden definir en swagger. Los más importantes son:
 * Info: solo faltaría por añadir la descripción del API
 * Base Path: viene relleno con lo que indicamos al crear el API
+* Policy Assembly: configuración del ensamblado del API
 * Security Definitions: por defecto, API Connect nos ha creado una API Key. Aquí también es dondese definen las políticas de seguridad.
 * Security: indica qué definiciones de seguridad se van a aplicar por igual a todos los recursos del API
 * Properties: por si queremos definir parámetros variables por entornos
