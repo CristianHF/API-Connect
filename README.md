@@ -104,3 +104,24 @@ Creamos 2 recursos, uno para mostrar un listado de cuentas **únicamente una /**
 Dentro de cada operación tenemos que añadir tanto los parámetros de entrada, se pueden definir nuevos o alguno definido en la sección **Parameters**, como los de salida, indicando además de qué tipo son, si un dato básico o un objeto definido en la sección **Definitions**.
 
 Para indicar qué seguridad se debe emplear, hay que desmarcar la casilla **Use API security definitions** y elegir la definida por nosotros y el scope correcto.
+
+-----
+
+### Productos
+
+Las APIs se agrupan en productos, pueden haber varias APIs en el mismo producto.
+
+Para crear un producto nos movemos a la pestaña **Products** y lo creamos de igual forma que se hizo para la API.
+
+Lo más destacable de la configuración del producto es:
+* Visibility: indica para quién es visible el producto y quién se puede suscribir a él
+* APIs: las APIs que están incluidas en el producto. Un producto creado de esta forma no tiene APIs relacionadas, hay que añadirlas
+* Plans: si queremos personalizar el límite de llamadas, cobrar por uso o limitar la suscripción a ciertas operaciones
+
+Una vez configurado el producto, debemos desplegarlo en el **Catálogo**, pulsando en el botón de la nube de arriba a la derecha y seleccionando el único catálogo, que se crea por defecto al iniciar la instancia de API Connect.
+
+-----
+
+### Catálogo
+
+Una vez desplegado el producto en el catálogo, accedemos a él en el menú de la izquierda seleccionando la opción **Dashboard**, elegimos el catálogo y nos aparecerá el producto en estado **Stage**. Usando el menú de los tres puntos podemos publicar el producto seleccionando la opción **Publish**.
