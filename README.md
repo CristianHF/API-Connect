@@ -89,3 +89,16 @@ Definimos los objetos necesarios para montar la siguiente estructura
   ]
 }
 ```
+Además, definimos también los objetos necesarios para conformar el mensaje de error
+```json
+{
+  "errors": [
+    {
+      "code": "XXX",
+      "message": "Message",
+      "level": "Error",
+      "description": "Description"
+    }
+  ]
+}
+```
