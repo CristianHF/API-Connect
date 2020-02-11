@@ -37,4 +37,10 @@ En el menú de la izquierda tenemos acceso directo a los principales objetos que
 * Info: solo faltaría por añadir la descripción del API
 * Base Path: viene relleno con lo que indicamos al crear el API
 * Security Definitions: por defecto, API Connect nos ha creado una API Key, podemos cambiarle el nombre en el campo **Name**. Aquí también es donde definiremos las políticas de seguridad.
-  * fdas
+* Security: indica qué definiciones de seguridad se van a aplicar por igual a todos los recursos del API
+* Properties: por si queremos definir parámetros variables por entornos
+* Paths: definición de los endpoints/recursos
+* Parameters: definición de parámetros globales para usar en cualquier otra parte de la definición
+* Definitions: definición de objetos para entrada y salida
+
+##### Security Definitions
