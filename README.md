@@ -102,3 +102,5 @@ Además, definimos también los objetos necesarios para conformar el mensaje de 
 Creamos 2 recursos, uno para mostrar un listado de cuentas **únicamente una /** y otro para mostrar el detalle de una cuenta **/{account_id}**. Nos quedamos con las operaciones GET, aunque dentro de cada recurso podemos definir varias operaciones con distinto verbo.
 
 Dentro de cada operación tenemos que añadir tanto los parámetros de entrada, se pueden definir nuevos o alguno definido en la sección **Parameters**, como los de salida, indicando además de qué tipo son, si un dato básico o un objeto definido en la sección **Definitions**.
+
+Para indicar qué seguridad se debe emplear, hay que desmarcar la casilla **Use API security definitions** y elegir la definida por nosotros y el scope correcto.
