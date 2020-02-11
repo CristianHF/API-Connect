@@ -153,4 +153,5 @@ Aunque se haya creado una por defecto, vamos a crear otra distinta. El orden ser
 Para saber la URL a la que debemos atacar la podemos encontrar en la pestaña **Settings** y en la sección **Gateways**.
 
 Una vez hecho esto podríamos usar **Postman** para probar el API.
-Haciendo un GET a la URL del Gateway y concatenándole **/accounts** debería devolvernos un listado de cuentas. Concatenando **/accounts/{account_id}** debería devolvernos el detalle de una sola cuenta.
+
+Hay que tener en cuenta que se definió un API Key como elemento de seguridad, así que hay que informar la cabecera **X-IBM-Client-Id** obligatoriamente y con valor el **client_id** que se nos proporcionó. Haciendo un GET a la URL del Gateway y concatenándole **/accounts** debería devolvernos un listado de cuentas. Concatenando **/accounts/{account_id}** debería devolvernos el detalle de una sola cuenta.
