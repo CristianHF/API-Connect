@@ -36,11 +36,40 @@ La primera pestaña que se nos muestra es el editor gráfico, conforme vayamos r
 En el menú de la izquierda tenemos acceso directo a los principales objetos que se pueden definir en swagger. Los más importantes son:
 * Info: solo faltaría por añadir la descripción del API
 * Base Path: viene relleno con lo que indicamos al crear el API
-* Security Definitions: por defecto, API Connect nos ha creado una API Key, podemos cambiarle el nombre en el campo **Name**. Aquí también es donde definiremos las políticas de seguridad.
+* Security Definitions: por defecto, API Connect nos ha creado una API Key. Aquí también es dondese definen las políticas de seguridad.
 * Security: indica qué definiciones de seguridad se van a aplicar por igual a todos los recursos del API
 * Properties: por si queremos definir parámetros variables por entornos
 * Paths: definición de los endpoints/recursos
 * Parameters: definición de parámetros globales para usar en cualquier otra parte de la definición
 * Definitions: definición de objetos para entrada y salida
 
-##### Security Definitions
+-----
+
+### Security Definitions
+
+Por defecto se crea una API Key como parámetro de cabecera, se le puede cambiar el nombre en el campo **Name** pero nunca el **Parameter name**.
+
+Además, le vamos a añadir una política de seguridad, pulsando el botón **+** y seleccionando la opción **OAuth**. Podemos configurarla como queramos pero el campo importante es el **Flow**, que en este caso usaremos la opción **Application**, que es lo equivalente a un **Client Credentials**. El campo **Token URL** es obligatorio pero podemos poner cualquier cosa.
+
+Crearemos unos scopes, uno para el listado de cuentas **accounts_list.read** y otro para el detalle de cuenta **account_details.read**.
+
+### Properties
+
+Creamos una nueva propiedad llamada **target-url**, que será la URL que utilicemos para dar respuesta a la API, usaremos esta: https://cheredif-eval-test.apigee.net/
+
+### Paths
+
+Creamos 2 recursos, uno para mostrar un listado de cuentas **únicamente una /** y otro para mostrar el detalle de una cuenta **/{account_id}**. Nos quedamos con las operaciones GET, aunque dentro de cada recurso podemos definir varias operaciones con distinto verbo.
+
+Dentro de cada operación tenemos que añadir tanto los parámetros de entrada como los de salida.
+
+### Parameteres
+
+Podemos definir parámetros de entrada que se van a repetir en la definición del API, para así solo definirlos una vez y luego referenciarlos.
+
+Definimos la cabecera **Authorization** y la marcamos como obligatoria.
+
+### Definitions
+
+Aquí se definen los objetos JSON de entrada y salida.
+
